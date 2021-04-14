@@ -1,0 +1,120 @@
+.btn {
+    padding: 0.5em 1.25em;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+}
+
+
+.btn--primary {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.btn--secondary {
+    color: var(--clr-primary);
+    background-color: white;
+    border: 1px solid var(--clr-primary);
+}
+
+.btn--sm {
+    font-size: 1.1rem;
+}
+
+.btn--md {
+    font-size: 1.4rem;
+}
+
+.btn--lg {
+    font-size: 2.2rem;
+}
+
+.btn--success {
+    color: white;
+    background-color: var(--clr-success);
+}
+
+.btn--danger {
+    color: white;
+    background-color: var(--clr-error);
+}
+
+.btn--warning {
+    color: var(--clr-gray);
+    background-color: var(--clr-warning);
+}
+
+.btn--info {
+    color: white;
+    background-color: var(--clr-info);
+}
+
+.btn--dark {
+    color: white;
+    background-color: black;
+}
+
+.btn--light {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn--link {
+    color: var(--clr-info);
+    text-decoration: underline;
+    border: none;
+    background-color: white;
+}
+
+.btn--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn--waiting {
+    cursor: wait;
+    opacity: 0.5;
+}
+
+.btn--icon--left,
+.btn--icon--right {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.btn--icon--right .btn__text,
+.btn--icon--left .btn__text {
+    flex: 1;
+}
+
+
+.btn--icon--left .btn__icon {
+    padding-left: 0.4em;
+}
+
+.btn--icon--right .btn__icon {
+    padding-right: 0.4em;
+}
+
+
+.btn--social-twitter {
+    background-color: var(--clr-twitter);
+    color: white;
+}
+
+.btn--social-facebook {
+    background-color: var(--clr-facebook);
+    color: white;
+}
+
+.btn--icon {
+    background: none;
+    border: none;
+
+}
