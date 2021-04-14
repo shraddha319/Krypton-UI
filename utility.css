@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-text {
+    color: var(--clr-blue);
+    font-weight: 900;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container--center {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 480px;
+}
+
+.container--fluid {
+    width: 100%;
+}
+
+.sticky--top {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 1000;
+}
+
+.flex--row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.flex--column {
+    display: flex;
+    flex-flow: column;
+}
+
+.scrollable-x {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.scrollable-y {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.underline {
+    border-bottom: 1px solid var(--clr-light-gray);
+}
+
+.sticky--left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.icon {
+    width: 38px;
+}
+
+.icon--xs {
+    width: 25px;
+}
+
+.icon--sm {
+    width: 50px;
+}
+
+.icon--md {
+    width: 100px;
+}
+
+.icon--lg {
+    width: 150px;
+}
+
+.title--sm {
+    font-size: 1.1rem;
+}
+
+.title--md {
+    font-size: 1.6rem;
+}
+
+.title--lg {
+    font-size: 2.2rem;
+}
+
+.title--xlg {
+    font-size: 3rem;
+}
+
+.text--sm {
+    font-size: 0.7rem;
+}
+
+.text--md {
+    font-size: 1rem;
+}
+
+.text--lg {
+    font-size: 1.5rem;
+}
+
+.text-muted {
+    color: var(--clr-gray);
+    font-size: 0.9rem;
+}
+
+.hashtag {
+    display: inline;
+    color: var(--clr-info);
+    padding: 0.2em 0;
+    cursor: pointer;
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+}
+
+.hover--scale-out:hover {
+    transform: scale(1.05);
+    transition: 100ms;
+}
