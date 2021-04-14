@@ -1,0 +1,40 @@
+.alert {
+    border-radius: 0.2rem;
+    min-width: 450px;
+    width: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    margin: 0.5rem;
+}
+
+.alert--info {
+    background-color: var(--clr-info);
+}
+
+.alert--warning {
+    background-color: var(--clr-warning);
+}
+
+.alert--error {
+    background-color: var(--clr-error);
+}
+
+
+.alert--success {
+    background-color: var(--clr-success);
+}
+
+.alert__icon {
+    margin: 0 0.4em;
+}
+
+.alert__text {
+    color: white;
+}
+
+.alter__title {
+    padding: 1r em 0;
+}
