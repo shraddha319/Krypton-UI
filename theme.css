@@ -1,0 +1,13 @@
+:root {
+    --clr-primary: #ed2945;
+    --clr-gray-lighter: #f5f5f5;
+    --clr-black: #1d1d1d;
+    --clr-gray-light: #e8e8e8;
+    --clr-gray: #AAAD9B;
+    --clr-info: #3581D8;
+    --clr-warning: #efcc00;
+    --clr-error: #D82E3F;
+    --clr-success: #28CC2D;
+    --clr-twitter: #1da1f2;
+    --clr-facebook: #385898;
+}
