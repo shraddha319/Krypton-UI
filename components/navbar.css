@@ -1,0 +1,132 @@
+.header {
+    background: black;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    min-width: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__brand {
+    color: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav--main {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.nav {
+    background: black;
+}
+
+.nav__item {
+    margin: 1rem;
+}
+
+.nav__item a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__item a:hover {
+    color: var(--clr-primary);
+}
+
+.nav--social ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#header__toggle span,
+#header__toggle span::before,
+#header__toggle span::after {
+    display: block;
+    width: 2rem;
+    height: 5px;
+    background: var(--clr-primary);
+    border-radius: 5px;
+    position: relative;
+}
+
+#header__toggle span::before,
+#header__toggle span::after {
+    content: '';
+    position: absolute;
+}
+
+#header__toggle span::before {
+    top: 12px;
+}
+
+#header__toggle span::after {
+    bottom: 12px;
+}
+
+@media screen and (min-width: 1280px) {
+    #header__toggle {
+        display: none;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(400px, 3fr) minmax(400px, 0.5fr) 0.5fr;
+    }
+
+    .header__brand {
+        grid-column: 2/3;
+    }
+
+    .nav--main {
+        all: unset;
+        grid-column: 3/4;
+    }
+
+    .nav--social {
+        position: static;
+        grid-column: 4/5;
+    }
+
+    .nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav__item {
+        position: relative;
+        margin: 1rem;
+    }
+
+    .nav__item a::before {
+        content: '';
+        display: block;
+        height: 3px;
+        background: var(--clr-primary);
+        width: 100%;
+        position: absolute;
+        top: -0.65em;
+        transform: scale(0, 1);
+        transition: transform 250ms ease-in-out;
+    }
+
+    .nav__item a:hover::before {
+        transform: scale(1, 1);
+    }
+
+}
