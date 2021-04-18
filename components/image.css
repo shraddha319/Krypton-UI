@@ -1,17 +1,11 @@
-.image--container {
-    width: 100%;
-}
-
 .image--responsive {
-    width: 100%;
-    object-fit: contain;
+  width: 80%;
+  object-fit: contain;
 }
-
-
 
 .image--round {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
 }
