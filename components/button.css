@@ -1,24 +1,36 @@
 .btn {
     all: unset;
-    padding: 0.5em 1.25em;
+    padding: 12px 20px;
     cursor: pointer;
     font-family: inherit;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.2rem;
-    border-radius: 10px;
     background: none;
 }
 
-
 .btn--primary {
     background-color: var(--clr-primary);
-    color: var(--clr-secondary);
+    color: white;
+}
+
+.btn--primary:hover {
+    border: 2px solid var(--clr-primary);
+    color: var(--clr-primary);
+    background: transparent;
+    transition: background 100ms ease-in;
 }
 
 .btn--secondary {
     color: var(--clr-primary);
     background-color: white;
-    border: 1px solid var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+}
+
+.btn--secondary:hover {
+    border: 2px solid var(--clr-black);
+    color: var(--clr-black);
+    background: transparent;
+    transition: background 100ms ease-in;
 }
 
 .btn--sm {
@@ -93,7 +105,6 @@
     flex: 1;
 }
 
-
 .btn--icon--left .btn__icon {
     padding-left: 0.4em;
 }
@@ -101,7 +112,6 @@
 .btn--icon--right .btn__icon {
     padding-right: 0.4em;
 }
-
 
 .btn--social-twitter {
     background-color: var(--clr-twitter);
@@ -113,8 +123,13 @@
     color: white;
 }
 
-.btn--icon {
-    background: none;
-    border: none;
 
+.fa--icon {
+    color: var(--clr-primary);
+}
+
+.fa--icon:hover {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--clr-primary);
 }
