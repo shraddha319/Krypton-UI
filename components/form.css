@@ -1,0 +1,79 @@
+.field {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.field__input {
+    width: 100%;
+    display: block;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--clr-gray);
+    border-radius: 4px;
+    margin: 0.5rem 0 0.2rem;
+    transition: 280ms border ease-in-out;
+}
+
+.field--readonly .field__input {
+    border-style: dashed;
+    border-width: 3px;
+    cursor: not-allowed;
+    color: var(--clr-text-muted);
+}
+
+.field--disabled .field__input {
+    background-color: var(--clr-area-muted);
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+.field--required .field__label::before {
+    content: "*";
+    color: var(--clr-error);
+    padding-right: 0.1em;
+}
+
+
+.field__input:focus {
+    border-color: hsl(var(--clr-primary-h),
+            var(--clr-primary-s),
+            var(--clr-primary-l));
+    /* box-shadow: 0 0 0 3px hsl(var(--clr-primary-h),
+            var(--clr-primary-s),
+            calc(var(--clr-primary-l) + 40%)); */
+    border-width: 3px;
+    /* border: 3px solid var(--clr-gray); */
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+
+.field--radio {
+    display: flex;
+}
+
+.field--radio>* {
+    margin: 0.5em;
+}
+
+.field--radio--horizontal {
+    flex-flow: row wrap;
+}
+
+.field--radio--horizontal {
+    flex-flow: column wrap;
+}
+
+.field__input--slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+.field--required .field__text {
+    color: var(--clr-error);
+}
