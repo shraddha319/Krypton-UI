@@ -7,6 +7,7 @@
 @import "./components/form.css";
 @import "./components/list.css";
 @import "./components/badge.css";
+@import "./components/toast.css";
 @import "theme.css";
 @import "utility.css";
 
