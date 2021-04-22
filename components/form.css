@@ -1,13 +1,14 @@
-.field {
+.field,
+.field--set {
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: inherit;
 }
 
 .field__input {
     width: 100%;
     display: block;
-    outline: none;
     font-size: inherit;
+    outline: none;
     font-family: inherit;
     padding: 0.25em 0.5em;
     background-color: #fff;
@@ -15,6 +16,10 @@
     border-radius: 4px;
     margin: 0.5rem 0 0.2rem;
     transition: 280ms border ease-in-out;
+}
+
+.field__label {
+    font-size: 1.1rem;
 }
 
 .field--readonly .field__input {
@@ -53,21 +58,15 @@
 }
 
 
-.field--radio {
-    display: flex;
-}
-
-.field--radio>* {
+.field--set>* {
     margin: 0.5em;
 }
 
-.field--radio--horizontal {
+.field--horizontal {
+    display: flex;
     flex-flow: row wrap;
 }
 
-.field--radio--horizontal {
-    flex-flow: column wrap;
-}
 
 .field__input--slider {
     width: 100%;
@@ -76,4 +75,48 @@
 
 .field--required .field__text {
     color: var(--clr-error);
+}
+
+fieldset {
+    border: none;
+}
+
+
+.checkbox--container {
+    position: relative;
+}
+
+.field--checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.field--checkbox input[type="checkbox"]+label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    line-height: 30px;
+}
+
+.field--checkbox input[type="checkbox"]+label::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--clr-gray);
+}
+
+.field--checkbox input[type="checkbox"]:checked+label::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--clr-gray);
+    background-color: var(--clr-primary);
+    background-image: url("../assets/form/check-solid.svg");
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
