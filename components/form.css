@@ -94,16 +94,16 @@ fieldset {
     display: inline-block;
     cursor: pointer;
     padding: 0.5rem 0;
-    padding-left: 1rem;
-    line-height: 30px;
+    padding-left: 30px;
+    line-height: 28px;
 }
 
 .field--checkbox input[type="checkbox"]+label::before {
     position: absolute;
     left: 0;
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid var(--clr-gray);
 }
 
@@ -111,12 +111,12 @@ fieldset {
     position: absolute;
     left: 0;
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid var(--clr-gray);
     background-color: var(--clr-primary);
     background-image: url("../assets/form/check-solid.svg");
-    background-size: 1rem;
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position: center center;
 }
