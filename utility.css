@@ -19,6 +19,8 @@
 }
 
 .justify-between {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -46,7 +48,6 @@
 .flex--row {
     display: flex;
     flex-flow: row;
-    align-items: center;
 }
 
 .flex--column {
@@ -79,6 +80,9 @@
     z-index: 1000;
 }
 
+.text--primary {
+    color: var(--clr-primary);
+}
 
 .icon {
     width: 38px;
@@ -141,7 +145,7 @@
 }
 
 .text--md {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .text--lg {
