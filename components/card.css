@@ -6,7 +6,6 @@
     background: white;
 }
 
-
 .card__media {
     grid-area: media;
 }
@@ -48,7 +47,6 @@
         "footer";
 }
 
-
 .card__media--image {
     width: 100%;
     height: 100%;
@@ -63,7 +61,6 @@
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 .card__body__title {
