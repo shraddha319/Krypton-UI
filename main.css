@@ -9,6 +9,7 @@
 @import "./components/badge.css";
 @import "./components/toast.css";
 @import "./components/card.css";
+@import "./components/carousel.css";
 @import "./syntax-highlighter/syntax-highlighter.css";
 @import "theme.css";
 @import "utility.css";
