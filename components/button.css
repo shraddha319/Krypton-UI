@@ -1,20 +1,20 @@
 .btn {
     all: unset;
-    padding: 12px 20px;
+    padding: 0.4em 1.2em;
     cursor: pointer;
     font-family: inherit;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background: none;
 }
 
 .btn--primary {
     background-color: var(--clr-primary);
     color: white;
+    border: 2px solid var(--clr-primary);
 }
 
 .btn--primary:hover {
-    border: 2px solid var(--clr-primary);
     color: var(--clr-primary);
     background: transparent;
     transition: background 100ms ease-in;
@@ -27,22 +27,22 @@
 }
 
 .btn--secondary:hover {
-    border: 2px solid var(--clr-black);
+    border-color: var(--clr-black);
     color: var(--clr-black);
     background: transparent;
     transition: background 100ms ease-in;
 }
 
 .btn--sm {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .btn--md {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .btn--lg {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 
 .btn--success {
@@ -56,7 +56,7 @@
 }
 
 .btn--warning {
-    color: var(--clr-gray);
+    color: white;
     background-color: var(--clr-warning);
 }
 
@@ -67,7 +67,7 @@
 
 .btn--dark {
     color: white;
-    background-color: black;
+    background-color: var(--clr-black);
 }
 
 .btn--light {
@@ -105,11 +105,11 @@
     flex: 1;
 }
 
-.btn--icon--left .btn__icon {
+.btn--icon--right .btn__icon {
     padding-left: 0.4em;
 }
 
-.btn--icon--right .btn__icon {
+.btn--icon--left .btn__icon {
     padding-right: 0.4em;
 }
 
@@ -121,15 +121,4 @@
 .btn--social-facebook {
     background-color: var(--clr-facebook);
     color: white;
-}
-
-
-.fa--icon {
-    color: var(--clr-primary);
-}
-
-.fa--icon:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--clr-primary);
 }
