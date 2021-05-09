@@ -15,11 +15,11 @@
     color: white;
     z-index: 2;
     overflow: hidden;
-
+    margin: 0.5rem;
 }
 
 .alert__icon {
-    margin-right: 0.8rem;
+    margin-right: 1rem;
 }
 
 .alert__text {
