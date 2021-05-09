@@ -3,6 +3,7 @@ const closeToastBtn = document.querySelector(".toast__close");
 const tirggerToast = document.getElementById("trigger--toast");
 
 const showToast = () => {
+    toast.style.display = "inline-flex";
     toast.classList.remove("toast--hide");
     toast.classList.add("toast--show");
 }
