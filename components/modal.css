@@ -16,8 +16,8 @@
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%);
-    width: 550px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     background-color: white;
     z-index: 2;
 }
@@ -25,19 +25,16 @@
 .modal__header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0.7rem;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
     background-color: var(--clr-black);
     color: white;
 }
 
-.modal__title {
-    margin-left: 1rem;
-}
 
 .modal__body {
     text-align: center;
-    /* width: 85%; */
-    height: 60%;
+    height: 65%;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
@@ -57,8 +54,7 @@
 
 
 .modal__text {
-    margin: 0 2rem;
-    font-weight: 600;
+    margin: 0 1rem;
 }
 
 .modal__close {
