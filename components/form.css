@@ -2,6 +2,7 @@
 .field--set {
     margin: 1rem;
     font-size: inherit;
+    width: 600px;
 }
 
 .field__input {
@@ -12,7 +13,7 @@
     font-family: inherit;
     padding: 0.25em 0.5em;
     background-color: #fff;
-    border: 2px solid var(--clr-gray);
+    border: 1px solid var(--clr-gray);
     border-radius: 4px;
     margin: 0.5rem 0 0.2rem;
     transition: 280ms border ease-in-out;
@@ -20,6 +21,8 @@
 
 .field__label {
     font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--clr-gray);
 }
 
 .field--readonly .field__input {
@@ -43,14 +46,7 @@
 
 
 .field__input:focus {
-    border-color: hsl(var(--clr-primary-h),
-            var(--clr-primary-s),
-            var(--clr-primary-l));
-    /* box-shadow: 0 0 0 3px hsl(var(--clr-primary-h),
-            var(--clr-primary-s),
-            calc(var(--clr-primary-l) + 40%)); */
-    border-width: 3px;
-    /* border: 3px solid var(--clr-gray); */
+    box-shadow: 0 0 3px 2px var(--clr-aqua);
 }
 
 .field textarea {
@@ -114,9 +110,33 @@ fieldset {
     width: 28px;
     height: 28px;
     border: 1px solid var(--clr-gray);
-    background-color: var(--clr-primary);
+    background-color: var(--clr-aqua);
     background-image: url("../assets/form/check-solid.svg");
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.field__input--slider {
+    -webkit-appearance: none;
+    height: 5px;
+    width: 100%;
+    background: var(--clr-gray);
+    opacity: 0.5;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.field__input--slider:hover {
+    opacity: 0.7;
+}
+
+.field__input--slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--clr-aqua);
+    cursor: pointer;
 }
