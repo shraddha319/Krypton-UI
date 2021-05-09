@@ -14,6 +14,7 @@ function toastShowHide() {
     const triggerToast = document.getElementById("trigger--toast");
 
     const showToast = () => {
+      toast.style.display = "block";
       toast.classList.remove("toast--hide");
       toast.classList.add("toast--show");
     };

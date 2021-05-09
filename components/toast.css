@@ -1,22 +1,27 @@
 .toast {
-    min-width: 500px;
-    height: 90px;
-    font-size: 1rem;
-    font-family: inherit;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    border-left: 8px solid var(--clr-warning);
-    border-radius: 8px;
-    padding: 0.5rem 0 0.5rem 1rem;
+    display: none;
     position: fixed;
     top: 10px;
     right: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    min-width: 500px;
+    height: 90px;
+    border-left: 8px solid var(--clr-warning);
+    border-radius: 8px;
+    z-index: 2;
     background: var(--clr-black);
     color: white;
-    z-index: 2;
-    overflow: hidden;
+}
 
+.toast__layout {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 1rem;
+    overflow: hidden;
 }
 
 .toast__icon {
@@ -60,7 +65,7 @@
     }
 
     100% {
-        transform: translateX(-10px);
+        transform: translateX(0px);
     }
 }
 
