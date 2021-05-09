@@ -3,7 +3,7 @@
     --clr-gray-lighter: #f5f5f5;
     --clr-black: #1d1d1d;
     --clr-gray-light: #e8e8e8;
-    --clr-gray: rgb(94, 95, 86);
+    --clr-gray: #5e5f56;
     --clr-info: #3581D8;
     --clr-warning: #ffa502;
     --clr-error: #D82E3F;
@@ -17,4 +17,6 @@
     --clr-primary-h: 351;
     --clr-primary-l: 55%;
     --clr-primary-s: 84%;
+
+    --clr-aqua: #1AB9E7;
 }
