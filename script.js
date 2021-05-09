@@ -21,6 +21,7 @@ function toastShowHide() {
     const hideToast = () => {
       toast.classList.add("toast--hide");
       toast.classList.remove("toast--show");
+      console.log(toast);
     };
 
     triggerToast.addEventListener("click", () => {
