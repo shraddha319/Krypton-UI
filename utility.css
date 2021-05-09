@@ -86,24 +86,24 @@
     color: var(--clr-primary);
 }
 
-.icon {
-    width: 38px;
-}
-
 .icon--xs {
-    width: 25px;
+    width: 1rem;
 }
 
 .icon--sm {
-    width: 50px;
+    width: 1.5rem;
 }
 
 .icon--md {
-    width: 100px;
+    width: 2rem
 }
 
 .icon--lg {
-    width: 150px;
+    width: 2.5rem;
+}
+
+.icon--xlg {
+    width: 3rem;
 }
 
 .fa--xs {
@@ -124,6 +124,14 @@
 
 .fa--xlg {
     font-size: 3rem;
+}
+
+.fa--primary {
+    color: var(--clr-primary);
+}
+
+.fa--hover:hover {
+    color: var(--clr-gray);
 }
 
 .title--sm {
