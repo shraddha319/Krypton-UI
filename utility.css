@@ -135,27 +135,27 @@
 }
 
 .title--xs {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
 }
 
 .title--sm {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 
 .title--md {
-    font-size: 2.4rem;
+    font-size: 1.75rem;
 }
 
 .title--lg {
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 
 .title--xlg {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 .title {
-    padding-bottom: 0.4em;
+    margin-bottom: 1em;
     font-weight: 600;
 }
 
@@ -164,15 +164,15 @@
 }
 
 .text--sm {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .text--md {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .text--lg {
-    font-size: 1.6rem;
+    font-size: 1.75rem;
 }
 
 .text--xlg {
@@ -186,7 +186,7 @@
 
 .text {
     line-height: 1.2em;
-    margin: 0.5em 0;
+    margin-bottom: 1em;
 }
 
 .hashtag {
