@@ -13,7 +13,7 @@
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    display: block;
+    display: inline-block;
 }
 
 .justify-center {
