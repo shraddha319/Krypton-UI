@@ -1,12 +1,10 @@
-/* add .text--underline*/
-
 .list--no-bullets {
     list-style: none;
 }
 
 .highlight-text {
-    color: var(--clr-blue);
-    font-weight: 900;
+    color: var(--clr-primary);
+    font-weight: 800;
 }
 
 .link {
@@ -16,7 +14,14 @@
     display: inline-block;
 }
 
+.flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .justify-center {
+    display: flex;
     justify-content: center;
 }
 
