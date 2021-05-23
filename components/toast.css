@@ -76,16 +76,4 @@
         display: none;
         visibility: hidden;
     }
-
-    /* 80% {
-        transform: translateX(-10%);
-    }
-
-    40% {
-        trasnform: translateX(0%);
-    }
-
-    0% {
-        transform: translateX(-10px);
-    } */
 }

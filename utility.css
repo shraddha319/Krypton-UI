@@ -77,7 +77,7 @@
 }
 
 .underline {
-    border-bottom: 1px solid var(--clr-light-gray);
+    border-bottom: 1px solid var(--clr-gray-light);
 }
 
 .sticky--left {

@@ -8,9 +8,6 @@
     align-items: center;
     border-radius: 8px;
     padding: 0.5rem 0 0.5rem 1rem;
-    /* position: fixed;
-    top: 10px;
-    right: 10px; */
     background: var(--clr-black);
     color: white;
     z-index: 2;
