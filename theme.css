@@ -13,6 +13,7 @@
 
     --clr-text-muted: #777;
     --clr-area-muted: #eee;
+    --clr-gradient: linear-gradient(to right, #fc354c, #0abfbc);
 
     --clr-primary-h: 351;
     --clr-primary-l: 55%;
