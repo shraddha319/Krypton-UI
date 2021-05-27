@@ -22,15 +22,14 @@
 
 .btn--secondary {
     color: var(--clr-primary);
-    background-color: white;
+    background: none;
     border: 2px solid var(--clr-primary);
 }
 
 .btn--secondary:hover {
     border-color: var(--clr-black);
     color: var(--clr-black);
-    background: transparent;
-    transition: background 100ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 .btn--sm {
@@ -77,11 +76,22 @@
 }
 
 .btn--link {
-    color: var(--clr-info);
-    text-decoration: underline;
-    border: none;
-    background-color: white;
+    color: var(--clr-gray);
+    background-color: transparent;
 }
+
+.underline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--clr-gray);
+    width: 100%;
+}
+
+.underline:hover::after {
+    background: var(--clr-gradient)
+}
+
 
 .btn--disabled {
     cursor: not-allowed;
