@@ -27,11 +27,8 @@ function toastShowHide() {
 
     triggerToast.addEventListener("click", () => {
       showToast();
-    });
-
-    if (toast.classList.contains("toast--show")) {
       setTimeout(hideToast, 5000);
-    }
+    });
 
     closeToastBtn.addEventListener("click", hideToast);
   } catch (err) {}
