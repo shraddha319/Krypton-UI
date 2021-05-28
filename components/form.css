@@ -1,10 +1,3 @@
-.field,
-.field--set {
-    margin: 1rem;
-    font-size: inherit;
-    width: 600px;
-}
-
 .field__input {
     width: 100%;
     display: block;
@@ -55,7 +48,7 @@
 
 
 .field--set>* {
-    margin: 0.5em;
+    margin: 0.5em 1em;
 }
 
 .field--horizontal {
@@ -90,7 +83,7 @@ fieldset {
     display: inline-block;
     cursor: pointer;
     padding: 0.2rem 0;
-    padding-left: 0.6rem;
+    padding-left: 1em;
     line-height: 1.2rem;
 }
 
