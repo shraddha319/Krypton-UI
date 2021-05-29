@@ -1,5 +1,4 @@
 .header {
-  background: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -9,6 +8,7 @@
   min-width: 580px;
   display: flex;
   justify-content: space-between;
+  background: var(--clr-black);
 }
 
 .header__brand {
@@ -25,10 +25,6 @@
   left: 0;
   text-align: left;
   width: 100%;
-}
-
-.nav {
-  background: black;
 }
 
 .nav__item {
