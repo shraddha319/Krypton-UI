@@ -1,5 +1,5 @@
 .carousel {
-    height: 600px;
+    height: 400px;
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -42,18 +42,19 @@
     transform: translateY(-50%);
     z-index: 1;
     cursor: pointer;
+    padding: 0.2rem;
 }
 
 .carousel__button img {
-    width: 2rem;
+    width: 1.2rem;
 }
 
 .carousel__button--left {
-    left: -100px;
+    left: -60px;
 }
 
 .carousel__button--right {
-    right: -100px;
+    right: -60px;
 }
 
 .carousel__button--hidden {
@@ -63,16 +64,16 @@
 .carousel__nav {
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding: 1rem 0;
 }
 
 .carousel__dot {
-    width: 1rem;
-    height: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
     border: 0;
     background: rgba(0, 0, 0, 0.3);
-    margin: 0 12px;
+    margin: 0 0.5rem;
 }
 
 .carousel__dot--active {
