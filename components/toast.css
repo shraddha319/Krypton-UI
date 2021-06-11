@@ -8,8 +8,7 @@
     transform: translateX(-50%);
     font-size: 0.9rem;
     font-family: inherit;
-    width: 480px;
-    min-width: 400px;
+    min-width: 460px;
     height: 90px;
     border-radius: 8px;
     z-index: 2;
