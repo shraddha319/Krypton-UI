@@ -55,7 +55,7 @@ function modalInvoke() {
     modalClose.addEventListener("click", closeModal);
 
     modalTrigger.addEventListener("click", () => {
-      modal.style.display = "block";
+      modal.style.display = "grid";
       modalContainer.style.display = "block";
     });
 
