@@ -1,11 +1,14 @@
 .btn {
     all: unset;
-    padding: 0.4em 1.2em;
+    padding: 0.3em 0.8em;
     cursor: pointer;
     font-family: inherit;
     font-weight: 600;
     font-size: 1rem;
     background: none;
+    transition: 200ms;
+    border-radius: 2px;
+    transition: 250ms;
 }
 
 .btn--primary {
@@ -17,7 +20,6 @@
 .btn--primary:hover {
     color: var(--clr-primary);
     background: transparent;
-    transition: background 100ms ease-in;
 }
 
 .btn--secondary {
