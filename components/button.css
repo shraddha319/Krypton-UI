@@ -1,0 +1,136 @@
+.btn {
+    all: unset;
+    padding: 0.3em 0.8em;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    background: none;
+    transition: 200ms;
+    border-radius: 2px;
+    transition: 250ms;
+}
+
+.btn--primary {
+    background-color: var(--clr-primary);
+    color: white;
+    border: 2px solid var(--clr-primary);
+}
+
+.btn--primary:hover {
+    color: var(--clr-primary);
+    background: transparent;
+}
+
+.btn--secondary {
+    color: var(--clr-primary);
+    background: none;
+    border: 2px solid var(--clr-primary);
+}
+
+.btn--secondary:hover {
+    border-color: var(--clr-black);
+    color: var(--clr-black);
+    transition: all 100ms ease-in;
+}
+
+.btn--sm {
+    font-size: 1rem;
+}
+
+.btn--md {
+    font-size: 1.2rem;
+}
+
+.btn--lg {
+    font-size: 1.5rem;
+}
+
+.btn--success {
+    color: white;
+    background-color: var(--clr-success);
+}
+
+.btn--danger {
+    color: white;
+    background-color: var(--clr-error);
+}
+
+.btn--warning {
+    color: white;
+    background-color: var(--clr-warning);
+}
+
+.btn--info {
+    color: white;
+    background-color: var(--clr-info);
+}
+
+.btn--dark {
+    color: white;
+    background-color: var(--clr-black);
+}
+
+.btn--light {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btn--link {
+    color: var(--clr-gray);
+    background-color: transparent;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: var(--clr-gray);
+    width: 100%;
+}
+
+.underline:hover::after {
+    background: var(--clr-gradient)
+}
+
+
+.btn--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn--waiting {
+    cursor: wait;
+    opacity: 0.5;
+}
+
+.btn--icon--left,
+.btn--icon--right {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.btn--icon--right .btn__text,
+.btn--icon--left .btn__text {
+    flex: 1;
+}
+
+.btn--icon--right .btn__icon {
+    padding-left: 0.4em;
+}
+
+.btn--icon--left .btn__icon {
+    padding-right: 0.4em;
+}
+
+.btn--social-twitter {
+    background-color: var(--clr-twitter);
+    color: white;
+}
+
+.btn--social-facebook {
+    background-color: var(--clr-facebook);
+    color: white;
+}

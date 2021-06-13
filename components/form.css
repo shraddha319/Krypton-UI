@@ -1,0 +1,135 @@
+.field__input {
+    width: 100%;
+    display: block;
+    font-size: inherit;
+    outline: none;
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 1px solid var(--clr-gray);
+    border-radius: 4px;
+    margin: 0.5rem 0 0.2rem;
+    transition: 280ms border ease-in-out;
+}
+
+.field__label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--clr-gray);
+}
+
+.field--readonly .field__input {
+    border-style: dashed;
+    border-width: 3px;
+    cursor: not-allowed;
+    color: var(--clr-text-muted);
+}
+
+.field--disabled .field__input {
+    background-color: var(--clr-area-muted);
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+.field--required .field__label::before {
+    content: "*";
+    color: var(--clr-error);
+    padding-right: 0.1em;
+}
+
+
+.field__input:focus {
+    box-shadow: 0 0 3px 2px var(--clr-aqua);
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+
+.field--set>* {
+    margin: 0.5em 1em;
+}
+
+.field--horizontal {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.field__input--slider {
+    width: 100%;
+    cursor: pointer;
+}
+
+.field--required .field__text {
+    color: var(--clr-error);
+}
+
+fieldset {
+    border: none;
+}
+
+
+.checkbox--container {
+    position: relative;
+}
+
+.field--checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.field--checkbox input[type="checkbox"]+label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.2rem 0;
+    padding-left: 1em;
+    line-height: 1.2rem;
+}
+
+.field--checkbox input[type="checkbox"]+label::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid var(--clr-gray);
+}
+
+.field--checkbox input[type="checkbox"]:checked+label::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid var(--clr-gray);
+    background-color: var(--clr-gray);
+    background-image: url("../assets/form/check-solid.svg");
+    background-size: 0.8rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.field__input--slider {
+    -webkit-appearance: none;
+    height: 5px;
+    width: 100%;
+    background: var(--clr-gray);
+    opacity: 0.5;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.field__input--slider:hover {
+    opacity: 0.7;
+}
+
+.field__input--slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--clr-gray);
+    cursor: pointer;
+}

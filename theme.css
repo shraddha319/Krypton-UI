@@ -1,0 +1,25 @@
+:root {
+    --clr-primary: #ed2945;
+    --clr-gray-lighter: #f5f5f5;
+    --clr-black: #1d1d1d;
+    --clr-gray-light: #e8e8e8;
+    --clr-gray: #5e5f56;
+    --clr-info: #3581D8;
+    --clr-warning: #ffa502;
+    --clr-error: #D82E3F;
+    --clr-success: #28CC2D;
+    --clr-twitter: #1da1f2;
+    --clr-facebook: #385898;
+
+    --clr-text-muted: #777;
+    --clr-area-muted: #eee;
+    --clr-gradient: linear-gradient(to right, #fc354c, #0abfbc);
+
+    --clr-primary-h: 351;
+    --clr-primary-l: 55%;
+    --clr-primary-s: 84%;
+
+    --clr-aqua: #1AB9E7;
+
+    --height-header: 100px;
+}
